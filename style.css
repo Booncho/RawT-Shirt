@@ -1,0 +1,63 @@
+/* Body section */
+    
+/* Font */
+.name{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Creepster', cursive;
+    font-family: 'Nosifer', cursive;
+}
+
+/* boostrap for Login Page */
+.gradient-custom {
+    /* fallback for old browsers */
+    background:black
+    }
+/* Navbar */
+#nb{
+    
+    list-style: none;
+    display: flex
+    
+}
+#menu{
+    font-size: 20px;
+    
+}
+/* login */
+#login{
+ position:absolute;
+ display: flex;
+ font-size: large;
+ margin-left: 1100px;
+}
+.btnLoging-popup{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    outline: none;
+    font-size: larger;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+.btnLoging-popup:hover{
+    background-color: aliceblue;
+    color: darkorchid;
+}
+@media screen and (max-width: 1500px) {
+    #login{
+        position:absolute;
+        display: flex;
+        font-size: large;
+        margin-left: 750px;
+       }
+}
+@media screen and (max-width: 820px) {
+    #login{
+        position:absolute;
+        display: flex;
+        font-size: large;
+        margin-left:300px;
+       }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+    <title>T-Shirt</title>
+    <script>
+      // ดึงค่า isLoggedIn จากตัวแปรที่ถูกส่งมาจาก Express.js
+     
+    
+      // รอให้ DOM โหลดเสร็จ
+      document.addEventListener('DOMContentLoaded', function () {
+        const isLoggedIn =  isLoggedIn ;
+        const loginButton = document.getElementById('login');
+    
+        // ถ้าผู้ใช้ล็อกอิน, ให้ซ่อนปุ่ม "Login"
+        if (isLoggedIn) {
+          loginButton.style.display = 'none';
+        }
+      });
+    </script>
+</head>
+
+
+<body class="b">
+    <body>
+        <!-- Boostrap -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        
+    <header data-bs-theme="dark">
+      <div class="text-bg-dark collapse" id="navbarHeader" >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>About</h4>
+              <p class="text-body-secondary">You can add you T-shirt in Add T-Shirt Button for sell you T-Shirt.</p>
+            </div>
+            <%  if(loggin) { %>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Menu List</h4>
+              <ul class="list-unstyled">
+                <li id="menu"><a href="/" class="text-white">Home</a></li>
+                <li id="menu"><a href="/add" class="text-white">Add T-Shirt</a></li>
+                <% } %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img style="height: 50px; width:150px ;" src="/images/RAW.jpg">
+          </a>
+
+          <%if(!loggin) { %>
+          <div id="login">
+            <a href="/login" style="font-weight: 500; " class="btn btn-success btn-lg active" role="button" aria-pressed="true">Login</a>
+          <% } %>
+
+            <%  if(loggin) { %>
+             <h1 class="name" style="color: burlywood; font-size: 30px;font-family: 'Bungee Spice', cursive; font-family: 'Creepster', cursive; font-family: 'Nosifer', cursive;"><%= username %></h1>
+             <div id="login">
+              <!-- <button  class="btnLoging-popup"><a href="/wantedsession">Logout</a></button> -->
+              <a href="/wantedsession"  style="font-weight: 500; margin-left: 700px;" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Logout</a>
+           <% } %>
+
+          </div>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <h3>Menu</h3>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+    
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-10 col-md-8 mx-auto">
+            <h2 style="font-family: 'Bungee Spice', cursive; font-family: 'Creepster', cursive; font-family: 'Nosifer', cursive;" class="wel">Welcome to RAW T-Shirt Store</h2>
+            <p style="font-family: 'Bungee Spice', cursive; font-family: 'Creepster', cursive; font-family: 'Nosifer', cursive;" class="lead text-body-secondary">T-Shirt Fashion is Our Style , We have every Style T-shirt from Around The World for everybody 60% polymer 40% cotton</p>
+          </div>
+        </div>
+      </section>
+    
+      <div class="container">
+        <div class="row my-4">
+          <div class="col-lg-12">
+            <div class="card shadow">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="text-secondary fw-bold fs-3">All Posts</div>
+              </div>
+
+              <div class="card-body">
+                <div class="row" id="show_posts">
+                  <div class="album py-5 bg-body-tertiary">
+                    <div class="container">
+   <!--Not Login  -->
+                      <%if(!loggin) { %>
+                        <% if(add != '') { %>
+                          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <% add.forEach(post => { %>
+                              <div class="col">
+                                <div class="card shadow-sm">
+                                  <img src="<%= post.image %>">
+                                  <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="card-title fs-5 fw-bold"><%= post.title %></div>
+                                      <div class="badge bg-dark"><%= post.category %></div>
+                                    </div>
+                                    <p class="card-text"><%= post.body %></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <!-- <div>
+                                        <a href="#" id="<%= post.id %>" data-bs-toggle="modal" data-bs-target="#edit_post_modal" class="btn btn-success btn-sm post_edit_btn">Edit</a>
+                                        <a href="#" id="<%= post.id %>" class="btn btn-danger btn-sm post_delete_btn">Delete</a>
+                                      </div> -->
+                                      <h3 class="text-body-secondary"><%= post.price %></h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <% }); %>
+                          </div> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <% }else { %>
+                      <h1 class="text-center text-secondary mt-5">No T-Shirt Add to Database!</h1>
+                      <% } %> 
+                        <% } %>
+<!-- Login -->
+                      <% if(loggin) {%>
+                        <% if(add != '') { %>
+                          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <% add.forEach(post => { %>
+                              <div class="col">
+                                <div class="card shadow-sm">
+                                  <img src="<%= post.image %>">
+                                  <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="card-title fs-5 fw-bold"><%= post.title %></div>
+                                      <div class="badge bg-dark"><%= post.category %></div>
+                                    </div>
+                                    <p class="card-text"><%= post.body %></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div>
+                                        <a href="/edit/<%= post._id %>"    class="btn btn-success btn-sm post_edit_btn">Edit</a>
+                                        <a href="/delete/<%= post._id %>"  class="btn btn-danger btn-sm post_delete_btn">Delete</a>
+                                      </div>
+                                      <h3 class="text-body-secondary"><%= post.price %></h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <% }); %>
+                          </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <% }else { %>
+                      <h1 class="text-center text-secondary mt-5">No T-Shirt Add to Database!</h1>
+                      <% } %>
+                        <% } %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+      
+    </main>
+    
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">© Made in U.S.A Free Shipping Around The World</p>
+        <img style="height: 50px; width:150px ;" src="/images/RAW.jpg">
+      </div>
+    </footer>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        
+    
+    </body>
+    
+
+
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
